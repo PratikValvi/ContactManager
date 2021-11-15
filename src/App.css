@@ -6,9 +6,10 @@
 
 .header span {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
-  color: darkblue;
+  color: indigo;
+  cursor: pointer;
 }
 
 .add-contact {
@@ -17,4 +18,38 @@
 
 .edit-contact {
   align-self: center;
+}
+
+.contact-wrapper:hover {
+  background-color: #D3D3D3;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-details, .button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+}
+
+.emptybox {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.error-show {
+  color: red;
+}
+
+.error-hide {
+  color: transparent;
 }
